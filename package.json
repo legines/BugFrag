@@ -1,14 +1,25 @@
 {
   "name": "8ugFrag",
   "displayName": "8ugFrag",
-  "description": "A combination of gruvbox dark, material, and one dark pro",
+  "description": "A combination of gruvbox dark material and one dark pro",
+  "publisher": "legines",
   "version": "0.0.1",
+  "homepage": "https://github.com/legines/8ugFrag",
   "engines": {
     "vscode": "^1.84.0"
   },
+  "license": "MIT",
+  "keywords": [
+    "gruvbox",
+    "theme"
+  ],
   "categories": [
     "Themes"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/legines/8ugFrag.git"
+  },
   "contributes": {
     "themes": [
       {
