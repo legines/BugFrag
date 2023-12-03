@@ -479,16 +479,16 @@
 		},
 		{
 		  "name": "CSS grey",
-		  "scope": "punctuation.definition.entity.css, punctuation.separator.key-value.css, punctuation.terminator.rule.css, punctuation.separator.list.comma.css",
+		  "scope": "punctuation.separator.key-value.css, punctuation.separator.list.comma.css",
 		  "settings": {
 			"foreground": "#928374"
 		  }
 		},
 		{
-		  "name": "CSS red",
-		  "scope": "entity.other.attribute-name.class.css",
+		  "name": "CSS purple",
+		  "scope": "punctuation.definition.keyword.css",
 		  "settings": {
-			"foreground": "#ea6962"
+			"foreground": "#d3869b"
 		  }
 		},
 		{
@@ -500,42 +500,49 @@
 		},
 		{
 		  "name": "CSS yellow",
-		  "scope": "entity.other.attribute-name.pseudo-class.css, entity.other.attribute-name.pseudo-element.css",
+		  "scope": "entity.other.attribute-name.class.css, support.constant.property-value.css, constant.numeric.css, punctuation.definition.constant.css",
 		  "settings": {
 			"foreground": "#d8a657"
 		  }
 		},
 		{
 		  "name": "CSS green",
-		  "scope": "string.quoted.single.css, string.quoted.double.css, support.constant.property-value.css, meta.property-value.css, punctuation.definition.string.begin.css, punctuation.definition.string.end.css, constant.numeric.css, support.constant.font-name.css, variable.parameter.keyframe-list.css",
+		  "scope": "string.quoted.single.css, string.quoted.double.css, meta.property-value.css, punctuation.definition.string.begin.css, punctuation.definition.string.end.css, support.constant.font-name.css, variable.parameter.keyframe-list.css",
 		  "settings": {
 			"foreground": "#a9b665"
 		  }
 		},
+		// {
+		//   "name": "CSS aqua",
+		//   "scope": "support.type.property-name.css",
+		//   "settings": {
+		// 	"foreground": "#89b482"
+		//   }
+		// },
 		{
-		  "name": "CSS aqua",
-		  "scope": "support.type.property-name.css",
+		  "name": "CSS white",
+		  "scope": "support.type.property-name.css, support.constant.media.css, support.type.property-name.media.css, punctuation.terminator.rule.css",
 		  "settings": {
-			"foreground": "#89b482"
+			"foreground": "#d4be98"
 		  }
 		},
 		{
 		  "name": "CSS blue",
-		  "scope": "support.type.vendored.property-name.css",
+		  "scope": "punctuation.definition.entity.css, entity.other.attribute-name.id.css, entity.other.attribute-name.id, support.type.vendored.property-name.css, entity.other.attribute-name.pseudo-element.css, entity.other.attribute-name.pseudo-class.css",
 		  "settings": {
 			"foreground": "#7daea3"
 		  }
 		},
 		{
-		  "name": "CSS purple",
-		  "scope": "entity.name.tag.css, entity.other.keyframe-offset.css, punctuation.definition.keyword.css, keyword.control.at-rule.keyframes.css, meta.selector.css",
+		  "name": "CSS red",
+		  "scope": "keyword.other.unit.rem.css, keyword.other.unit.percentage.css, keyword.other.unit.em.css, keyword.other.unit.deg.css, keyword.other.unit.px.css, entity.name.tag.css, entity.other.keyframe-offset.css, keyword.control.at-rule.keyframes.css, meta.selector.css",
 		  "settings": {
-			"foreground": "#d3869b"
+			"foreground": "#ea6962"
 		  }
 		},
 		{
 		  "name": "SASS grey",
-		  "scope": "punctuation.definition.entity.scss, punctuation.separator.key-value.scss, punctuation.terminator.rule.scss, punctuation.separator.list.comma.scss",
+		  "scope": "punctuation.definition.entity.scss, punctuation.separator.key-value.scss, punctuation.separator.list.comma.scss",
 		  "settings": {
 			"foreground": "#928374"
 		  }
@@ -548,22 +555,29 @@
 		  }
 		},
 		{
+			"name": "SASS red",
+			"scope": "entity.name.tag.reference.scss, entity.name.tag.custom.scss",
+			"settings": {
+			  "foreground": "#EA6962"
+			}
+		},
+		{
 		  "name": "SASS yellow",
-		  "scope": "punctuation.definition.interpolation.begin.bracket.curly.scss, punctuation.definition.interpolation.end.bracket.curly.scss",
+		  "scope": "meta.property-value.scss, punctuation.definition.interpolation.begin.bracket.curly.scss, punctuation.definition.interpolation.end.bracket.curly.scss",
 		  "settings": {
 			"foreground": "#d8a657"
 		  }
 		},
 		{
 		  "name": "SASS green",
-		  "scope": "punctuation.definition.string.begin.scss, punctuation.definition.string.end.scss, string.quoted.double.scss, string.quoted.single.scss, constant.character.css.sass, meta.property-value.scss",
+		  "scope": "punctuation.definition.string.begin.scss, punctuation.definition.string.end.scss, string.quoted.double.scss, string.quoted.single.scss, constant.character.css.sass",
 		  "settings": {
 			"foreground": "#a9b665"
 		  }
 		},
 		{
 		  "name": "SASS purple",
-		  "scope": "keyword.control.at-rule.include.scss, keyword.control.at-rule.use.scss, keyword.control.at-rule.mixin.scss, keyword.control.at-rule.extend.scss, keyword.control.at-rule.import.scss",
+		  "scope": "keyword.control.at-rule.media.scss, punctuation.definition.keyword.scss, keyword.control.at-rule.include.scss, keyword.control.at-rule.use.scss, keyword.control.at-rule.mixin.scss, keyword.control.at-rule.extend.scss, keyword.control.at-rule.import.scss",
 		  "settings": {
 			"foreground": "#d3869b"
 		  }
@@ -1948,11 +1962,18 @@
 		  }
 		},
 		{
-		  "name": "JSON orange",
+		  "name": "JSON red",
 		  "scope": "support.type.property-name.json",
 		  "settings": {
-			"foreground": "#e78a4e"
+			"foreground": "#EA6962"
 		  }
+		},
+		{
+			"name": "JSON yellow",
+			"scope": "constant.language.json.comments",
+			"settings": {
+			  "foreground": "#d8a657"
+			}
 		},
 		{
 		  "name": "JSON green",
