@@ -3,7 +3,7 @@
   "displayName": "BugFrag",
   "description": "A combination of gruvbox dark material and one dark pro",
   "version": "0.0.1",
-  "homepage": "https://github.com/legines/8ugFrag",
+  "homepage": "https://github.com/legines/BugFrag",
   "engines": {
     "vscode": "^1.84.0"
   },
@@ -17,14 +17,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/legines/8ugFrag.git"
+    "url": "https://github.com/legines/BugFrag.git"
   },
   "contributes": {
     "themes": [
       {
         "label": "BugFrag",
         "uiTheme": "vs-dark",
-        "path": "./themes/8ugFrag-color-theme.json"
+        "path": "./themes/BugFrag-color-theme.json"
       }
     ]
   }
