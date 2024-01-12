@@ -15,8 +15,8 @@
 	  "variable.defaultLibrary:typescriptreact": "#d3869b",
 	  "property.defaultLibrary:typescriptreact": "#d3869b",
 	  "intrinsic:python": "#d3869b",
-	  "module:python": "#7daea3",
-	  "class:python": "#89b482",
+	  "module:python": "#d4be98",
+	//   "class:python": "#89b482",
 	  "macro:rust": "#89b482",
 	  "namespace:rust": "#d3869b",
 	  "selfKeyword:rust": "#d3869b"
@@ -155,20 +155,20 @@
 			"foreground": "#89b482"
 		  }
 		},
-		{
-		  "name": "Identifier",
-		  "scope": "variable, support.variable, meta.definition.variable",
-		  "settings": {
-			"foreground": "#EA6962"
-		  }
-		},
-		{
-		  "name": "Property",
-		  "scope": "variable.object.property, support.variable.property, variable.other.property, variable.other.object.property, variable.other.enummember, variable.other.member, meta.object-literal.key",
-		  "settings": {
-			"foreground": "#EA6962"
-		  }
-		},
+		// {
+		//   "name": "Identifier",
+		//   "scope": "variable, support.variable, meta.definition.variable",
+		//   "settings": {
+		// 	"foreground": "#EA6962"
+		//   }
+		// },
+		// {
+		//   "name": "Property",
+		//   "scope": "variable.object.property, support.variable.property, variable.other.property, variable.other.object.property, variable.other.enummember, variable.other.member, meta.object-literal.key",
+		//   "settings": {
+		// 	"foreground": "#EA6962"
+		//   }
+		// },
 		{
 		  "name": "Delimiter",
 		  "scope": "punctuation, meta.brace, meta.delimiter, meta.bracket",
@@ -1268,11 +1268,25 @@
 		  }
 		},
 		{
+			"name": "Python red",
+			"scope": "variable.parameter.function-call.python, string.regexp.quoted.single.python",
+			"settings": {
+			  "foreground": "#EA6962"
+			}
+		},
+		{
 		  "name": "Python white",
 		  "scope": "meta.function-call.arguments.python",
 		  "settings": {
 			"foreground": "#d4be98"
 		  }
+		},
+		{
+			"name": "Python orange",
+			"scope": "punctuation.parenthesis.begin.regexp, punctuation.parenthesis.end.regexp, constant.other.set.regexp, variable.parameter.function.language.python, constant.other.caps.python, constant.numeric.dec.python",
+			"settings": {
+			  "foreground": "#e78a4e"
+			}
 		},
 		{
 		  "name": "Python grey",
@@ -1282,15 +1296,16 @@
 		  }
 		},
 		{
-		  "name": "Python aqua",
-		  "scope": "constant.language.python",
+		  "name": "Python yellow",
+		  "scope": "constant.language.python, variable.parameter.function.language.special.self.python",
 		  "settings": {
-			"foreground": "#89b482"
+			"foreground": "#d8a657"
+
 		  }
 		},
 		{
 		  "name": "Python purple",
-		  "scope": "keyword.control.import.python, keyword.control.import.from.python",
+		  "scope": "keyword.operator.logical.python, keyword.control.import.python, keyword.control.import.from.python",
 		  "settings": {
 			"foreground": "#d3869b"
 		  }
@@ -1339,7 +1354,7 @@
 		},
 		{
 		  "name": "Ruby red",
-		  "scope": "variable.other.ruby, punctuation.definition.variable.ruby",
+		  "scope": "variable.other.block.ruby, variable.other.readwrite.instance.ruby, variable.other.ruby, punctuation.definition.variable.ruby",
 		  "settings": {
 			"foreground": "#EA6962"
 		  }
