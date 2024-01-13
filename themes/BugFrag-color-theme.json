@@ -7,6 +7,7 @@
 	  "variable.defaultLibrary:javascriptreact": "#d3869b",
 	  "property.defaultLibrary:javascriptreact": "#d3869b",
 	  "class:typescript": "#D8A657",
+	  "variable.defaultLibrary:typescript": "#D8A657",
 	  "class:typescriptreact": "#89b482",
 	  "interface:typescriptreact": "#89b482",
 	  "enum:typescriptreact": "#d3869b",
@@ -16,7 +17,6 @@
 	  "property.defaultLibrary:typescriptreact": "#d3869b",
 	  "intrinsic:python": "#d3869b",
 	  "module:python": "#d4be98",
-	//   "class:python": "#89b482",
 	  "macro:rust": "#89b482",
 	  "namespace:rust": "#d3869b",
 	  "selfKeyword:rust": "#d3869b"
@@ -52,7 +52,7 @@
 		},
 		{
 		  "name": "String",
-		  "scope": "string, punctuation.deend, punctuation.definition.string.begin, punctuation.definition.string.end, punctuation.definition.string.template.begin, punctuation.definition.string.template.end",
+		  "scope": "punctuation.deend, punctuation.definition.string.begin, punctuation.definition.string.end, punctuation.definition.string.template.begin, punctuation.definition.string.template.end",
 		  "settings": {
 			"foreground": "#a9b665"
 		  }
@@ -415,7 +415,7 @@
 		},
 		{
 			"name": "Html white",
-			"scope": "punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html",
+			"scope": "text.html.derivative, punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html",
 			"settings": {
 				"foreground": "#d4be98"
 			}
@@ -429,14 +429,14 @@
 		},
 		{
 		  "name": "Html yellow",
-		  "scope": "entity.other.attribute-name.html, entity.other.attribute-name.xml, entity.other.attribute-name.localname.xml",
+		  "scope": "entity.other.attribute-name.html, entity.other.attribute-name.xml, entity.other.attribute-name.localname.xml, punctuation.definition.ng-binding-name.begin.html, punctuation.definition.ng-binding-name.end.html",
 		  "settings": {
 			"foreground": "#d8a657"
 		  }
 		},
 		{
 		  "name": "Html green",
-		  "scope": "string.quoted.double.html, string.quoted.single.html, punctuation.definition.string.begin.html, punctuation.definition.string.end.html, punctuation.separator.key-value.html, punctuation.definition.string.begin.xml, punctuation.definition.string.end.xml, string.quoted.double.xml, string.quoted.single.xml, punctuation.definition.tag.xml, meta.tag.xml, meta.tag.preprocessor.xml, meta.tag.other.html, meta.tag.block.any.html, meta.tag.inline.any.html",
+		  "scope": "meta.ng-binding.template.html, string.quoted.double.html, meta.ng-binding.property.html, meta.ng-binding.event.html, meta.ng-binding.two-way.html, string.quoted.double.html, string.quoted.single.html, punctuation.definition.string.begin.html, punctuation.definition.string.end.html, punctuation.separator.key-value.html, punctuation.definition.string.begin.xml, punctuation.definition.string.end.xml, string.quoted.double.xml, string.quoted.single.xml, punctuation.definition.tag.xml, meta.tag.xml, meta.tag.preprocessor.xml, meta.tag.other.html, meta.tag.block.any.html, meta.tag.inline.any.html",
 		  "settings": {
 			"foreground": "#a9b665"
 		  }
@@ -611,14 +611,14 @@
 		},
 		{
 			"name": "JavaScript yellow",
-			"scope": "variable.other.constant.object.js, variable.other.object.property.js, support.variable.js",
+			"scope": "variable.other.constant.object.js, support.variable.js, variable.other.constant.js",
 			"settings": {
 			  "foreground": "#D8A657"
 			}
 		},
 		{
 		  "name": "JavaScript red",
-		  "scope": "punctuation.definition.block.tag.jsdoc",
+		  "scope": "string.regexp.js, variable.other.constant.property.js, variable.other.readwrite.js, punctuation.definition.block.tag.jsdoc, variable.other.readwrite.alias.js, variable.other.object.property.js, variable.other.property.js",
 		  "settings": {
 			"foreground": "#ea6962"
 		  }
@@ -629,6 +629,13 @@
 		  "settings": {
 			"foreground": "#e78a4e"
 		  }
+		},
+		{
+			"name": "JavaScript green",
+			"scope": "string.quoted.single.js, string.quoted.template.js, string.quoted.double.js, string.template.js",
+			"settings": {
+				"foreground": "#a9b665"
+			}
 		},
 		{
 		  "name": "JSX white",
@@ -660,28 +667,28 @@
 		},
 		{
 		  "name": "TypeScript green",
-		  "scope": "punctuation.definition.tag.directive.ts, entity.other.attribute-name.directive.ts",
+		  "scope": "string.template.ts, string.quoted.single.ts, string.quoted.double.ts, punctuation.definition.tag.directive.ts, entity.other.attribute-name.directive.ts",
 		  "settings": {
 			"foreground": "#a9b665"
 		  }
 		},
 		{
 		  "name": "TypeScript aqua",
-		  "scope": "keyword.operator.logical.ts, keyword.operator.comparison.ts, keyword.operator.assignment.ts, meta.brace.square.ts, entity.name.type.interface.ts, entity.name.type.alias.ts, entity.name.type.class.ts, entity.name.type.enum.ts",
+		  "scope": "support.function.ts, keyword.operator.logical.ts, keyword.operator.comparison.ts, keyword.operator.assignment.ts, meta.brace.square.ts, entity.name.type.interface.ts, entity.name.type.alias.ts, entity.name.type.class.ts, entity.name.type.enum.ts",
 		  "settings": {
 			"foreground": "#89b482"
 		  }
 		},
 		{
 		  "name": "TypeScript orange",
-		  "scope": "constant.language.null.ts",
+		  "scope": "constant.language.null.ts, constant.numeric.decimal.ts",
 		  "settings": {
 			"foreground": "#e78a4e"
 		  }
 		},
 		{
 			"name": "TypeScript Yellow",
-			"scope": "variable.other.constant.ts, variable.language.this.ts",
+			"scope": "variable.other.object.property.ts, variable.other.constant.ts, variable.other.constant.object.ts, variable.language.this.ts",
 			"settings": {
 				"foreground": "#D8A657"
 			}
@@ -695,10 +702,17 @@
 		},
 		{
 		  "name": "TypeScript purple",
-		  "scope": "keyword.control.import.ts, keyword.control.export.ts, storage.type.namespace.ts, storage.type.ts, storage.type.function.arrow.ts, storage.type.type.ts, keyword.operator.optional.ts",
+		  "scope": "punctuation.definition.template-expression.begin.ts, punctuation.definition.template-expression.end.ts, keyword.control.import.ts, keyword.control.export.ts, storage.type.namespace.ts, storage.type.ts, storage.type.function.arrow.ts, storage.type.type.ts, keyword.operator.optional.ts",
 		  "settings": {
 			"foreground": "#d3869b"
 		  }
+		},
+		{
+			"name": "TypeScript red",
+			"scope": "variable.other.object.ts, meta.method.declaration.ts, meta.definition.variable.ts, variable.parameter, support.variable.property.ts, variable.other.property.ts, variable.parameter.ts, variable.object.property.ts, variable.other.readwrite.alias.ts, meta.object-literal.key.ts",
+			"settings": {
+			  "foreground": "#ea6962"
+			}
 		},
 		{
 		  "name": "TSX white",
@@ -1275,6 +1289,13 @@
 			}
 		},
 		{
+			"name": "Python green",
+			"scope": "string.quoted.single.python, string.quoted.docstring.multi.python",
+			"settings": {
+			  "foreground": "#A9B665"
+			}
+		},
+		{
 		  "name": "Python white",
 		  "scope": "meta.function-call.arguments.python",
 		  "settings": {
@@ -1326,7 +1347,7 @@
 		},
 		{
 			"name": "Ruby green",
-			"scope": "punctuation.section.array.begin.ruby, punctuation.section.array.end.ruby",
+			"scope": "string.quoted.other.interpolated.ruby, punctuation.section.array.begin.ruby, punctuation.section.array.end.ruby, string.quoted.single.ruby, string.quoted.double.ruby, string.quoted.double.interpolated.ruby",
 			"settings": {
 			  "foreground": "#A9B665"
 			}
@@ -1354,7 +1375,7 @@
 		},
 		{
 		  "name": "Ruby red",
-		  "scope": "variable.other.block.ruby, variable.other.readwrite.instance.ruby, variable.other.ruby, punctuation.definition.variable.ruby",
+		  "scope": "variable.other.block.ruby, variable.other.readwrite.instance.ruby, variable.other.ruby, punctuation.definition.variable.ruby, variable.language.ruby",
 		  "settings": {
 			"foreground": "#EA6962"
 		  }
@@ -1995,6 +2016,13 @@
 		  "settings": {
 			"foreground": "#928374"
 		  }
+		},
+		{
+			"name": "YAML purple",
+			"scope": "variable.other.alias.yaml",
+			"settings": {
+			  "foreground": "#D3869B"
+			}
 		},
 		{
 		  "name": "YAML green",
