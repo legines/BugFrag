@@ -4,8 +4,8 @@
 	"semanticTokenColors": {
 	  "operatorOverload": "#e78a4e",
 	  "memberOperatorOverload": "#e78a4e",
-	  "variable.defaultLibrary:javascriptreact": "#d3869b",
-	  "property.defaultLibrary:javascriptreact": "#d3869b",
+	  "variable.defaultLibrary:javascriptreact": "#ea6962",
+	  "property.defaultLibrary:javascriptreact": "#ea6962",
 	  "class:typescript": "#D8A657",
 	  "enumMember:typescript": "#89b482",
 	  "variable.defaultLibrary:typescript": "#D8A657",
@@ -14,8 +14,8 @@
 	  "enum:typescriptreact": "#d3869b",
 	  "enumMember:typescriptreact": "#89b482",
 	  "namespace:typescriptreact": "#d3869b",
-	  "variable.defaultLibrary:typescriptreact": "#d3869b",
-	  "property.defaultLibrary:typescriptreact": "#d3869b",
+	  "variable.defaultLibrary:typescriptreact": "#ea6962",
+	  "property.defaultLibrary:typescriptreact": "#ea6962",
 	  "method:python": "#7daea3",
 	  "function:python": "#7daea3",
 	  "intrinsic:python": "#d3869b",
@@ -591,14 +591,21 @@
 		},
 		{
 			"name": "JavaScript Blue",
-			"scope": "entity.name.function.js",
+			"scope": "entity.name.function.tagged-template.js, meta.object.member.js variable.other.readwrite.js, entity.name.function.js, meta.object.member.js meta.object-literal.key.js",
 			"settings": {
 			  "foreground": "#7daea3"
 			}
 		},
 		{
+			"name": "JavaScript Orange",
+			"scope": "constant.language.null.js, constant.language.undefined.js, constant.numeric.decimal.js",
+			"settings": {
+			  "foreground": "#e78a4e"
+			}
+		},
+		{
 			"name": "JavaScript purple",
-			"scope": "storage.type.function.arrow.js, keyword.control.import.js, constant.language.import-export-all.js, storage.type.js",
+			"scope": "keyword.control.export.js, meta.template.expression.js punctuation.definition.template-expression.begin.js, storage.type.function.arrow.js, keyword.control.import.js, constant.language.import-export-all.js, storage.type.js",
 			"settings": {
 			  "foreground": "#d3869b"
 			}
@@ -612,7 +619,7 @@
 		},
 		{
 			"name": "JavaScript yellow",
-			"scope": "variable.other.constant.object.js, support.variable.js, variable.other.constant.js, variable.other.object.property.js",
+			"scope": "meta.var.expr.js variable.other.object.js, meta.object.member.js variable.other.object.js, meta.function-call.js variable.other.object.js, variable.other.constant.object.js, support.variable.js, variable.other.constant.js, variable.other.object.property.js",
 			"settings": {
 			  "foreground": "#D8A657"
 			}
@@ -632,15 +639,36 @@
 			}
 		},
 		{
+			"name": "JSX red",
+			"scope": "meta.object.member.js.jsx variable.other.readwrite.js.jsx, entity.name.tag.js.jsx, meta.object-literal.key.js.jsx",
+			"settings": {
+			  "foreground": "#ea6962"
+			}
+		},
+		{
+			"name": "JSX orange",
+			"scope": "entity.other.attribute-name.js.jsx",
+			"settings": {
+			  "foreground": "#e78a4e"
+			}
+		},
+		{
 		  "name": "JSX white",
-		  "scope": "JSXNested",
+		  "scope": "JSXNested, meta.jsx.children.js.jsx",
 		  "settings": {
 			"foreground": "#d4be98"
 		  }
 		},
 		{
+			"name": "JSX yellow",
+			"scope": "meta.template.expression.js.jsx meta.embedded.line.js.jsx variable.other.readwrite.js.jsx, variable.other.readwrite.js.jsx, variable.other.object.js.jsx, meta.var.expr.js.jsx variable.other.readwrite.js.jsx, variable.other.constant.js.jsx entity.name.function.js.jsx, meta.object.member.js.jsx variable.other.property.js.jsx",
+			"settings": {
+			  "foreground": "#D8A657"
+			}
+		},
+		{
 		  "name": "JSX green",
-		  "scope": "punctuation.definition.tag.jsx, entity.other.attribute-name.jsx, punctuation.definition.tag.begin.js.jsx, punctuation.definition.tag.end.js.jsx, entity.other.attribute-name.js.jsx",
+		  "scope": "punctuation.definition.tag.jsx, entity.other.attribute-name.jsx, punctuation.definition.tag.begin.js.jsx, punctuation.definition.tag.end.js.jsx",
 		  "settings": {
 			"foreground": "#a9b665"
 		  }
@@ -1242,35 +1270,49 @@
 		},
 		{
 		  "name": "PHP white",
-		  "scope": "keyword.operator.class.php",
+		  "scope": "text.html.php, meta.attribute.php, support.attribute.builtin.php, keyword.operator.class.php",
 		  "settings": {
 			"foreground": "#d4be98"
 		  }
 		},
 		{
+			"name": "PHP yellow",
+			"scope": "storage.type.php, punctuation.separator.inheritance.php, keyword.other.type.php, entity.name.type.namespace.php, entity.other.alias.php, variable.language.this.php punctuation.definition.variable.php, variable.language.this.php",
+			"settings": {
+			  "foreground": "#d8a657"
+			}
+		},
+		{
 		  "name": "PHP orange",
-		  "scope": "storage.type.trait.php",
+		  "scope": "constant.numeric.decimal.php, constant.language.php, constant.other.class.php, storage.type.trait.php",
 		  "settings": {
 			"foreground": "#e78a4e"
 		  }
 		},
 		{
+			"name": "PHP red",
+			"scope": "variable.other.global.php punctuation.definition.variable.php, meta.function-call.php variable.other.global.php, variable.other.global.php, variable.other.class.php punctuation.definition.variable.php, variable.other.class.php, variable.other.global.safer.php punctuation.definition.variable.php, variable.other.global.safer.php, variable.other.property.php punctuation.definition.variable.php, variable.other.php punctuation.definition.variable.php, variable.other.php, variable.other.property.php",
+			"settings": {
+			  "foreground": "#EA6962"
+			}
+		},
+		{
 		  "name": "PHP aqua",
-		  "scope": "constant.language.php, support.other.namespace.php",
+		  "scope": "support.other.namespace.php",
 		  "settings": {
 			"foreground": "#89b482"
 		  }
 		},
 		{
 		  "name": "PHP blue",
-		  "scope": "storage.type.modifier.access.control.public.cpp, storage.type.modifier.access.control.private.cpp",
+		  "scope": "meta.function-call.php, support.function.basic_functions.php, support.function.json.php, support.function.file.php, support.function.info.php, support.function.datetime.php, support.function.string.php, support.function.array.php, support.function.construct.php, support.function.magic.php, support.function.funchand.php, entity.name.function.php, support.function.errorfunc.php, support.function.classobj.php, support.function.var.php, support.function.constructor.php, storage.type.modifier.access.control.public.cpp, storage.type.modifier.access.control.private.cpp",
 		  "settings": {
 			"foreground": "#7daea3"
 		  }
 		},
 		{
 		  "name": "PHP purple",
-		  "scope": "keyword.control.import.include.php, storage.type.php",
+		  "scope": "support.function.construct.output.php, keyword.operator.heredoc.php, keyword.operator.type.php, keyword.control.import.include.php",
 		  "settings": {
 			"foreground": "#d3869b"
 		  }
