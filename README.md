@@ -18,4 +18,6 @@ This VSCode theme is a combination of the [Gruvbox Material Dark Hard](https://g
 
 ![screenshots](images/Screenshot_1.png)
 
-![screenshots](images/Screenshot_2.png)
+![screenshots](images/Screenshot_3.png)
+
+![screenshots](images/Screenshot_4.png)

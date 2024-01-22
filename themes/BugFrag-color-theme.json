@@ -731,7 +731,7 @@
 		},
 		{
 			"name": "TypeScript red",
-			"scope": "variable.other.object.ts, meta.method.declaration.ts, meta.definition.variable.ts, variable.parameter, support.variable.property.ts, variable.other.property.ts, variable.parameter.ts, variable.object.property.ts, variable.other.readwrite.alias.ts, meta.object-literal.key.ts",
+			"scope": "variable.other.readwrite.ts, variable.other.object.ts, meta.method.declaration.ts, meta.definition.variable.ts, variable.parameter, support.variable.property.ts, variable.other.property.ts, variable.parameter.ts, variable.object.property.ts, variable.other.readwrite.alias.ts, meta.object-literal.key.ts",
 			"settings": {
 			  "foreground": "#ea6962"
 			}
