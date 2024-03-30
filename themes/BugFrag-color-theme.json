@@ -2209,6 +2209,7 @@
 		"editor.findRangeHighlightBackground": "#83a59870",
 		"editor.lineHighlightBackground": "#3c383660",
 		"editor.lineHighlightBorder": "#3c383600",
+		"editorIndentGuide.activeBackground1": "#c8c8c859",
 		"editorWhitespace.foreground": "#a8998420",
 		"editorRuler.foreground": "#a8998440",
 		"editorCodeLens.foreground": "#a8998490",
